@@ -1,0 +1,98 @@
+/*Name this external file gallery.css*/
+body{
+		margin: 2%;
+		border: 1px solid black;
+		background-color: #000000;
+        background-image: url('https://www.pixelstalk.net/wp-content/uploads/2015/11/Game-of-Thrones-Wallpaper.jpg');
+        background-attachment: fixed;
+}
+#image{
+    line-height:650px;
+		width: 40%;
+    height: 60%;
+		border:5px solid black;
+		margin:0 auto;
+    background-color: #000000;
+    background-image: url('https://i.pinimg.com/originals/c8/a3/51/c8a351c6801c380c9bb6ec40bf870fd1.jpg');
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom:25px;
+    font-size: 150%;
+    float: left;
+    position: fixed;
+
+}
+
+#photos
+{
+    margin-left:500px; 
+}
+.preview{
+    float: right;
+    
+		width:30%;
+        height:150px;
+		margin-left:17%;
+        margin-bottom: 15%;
+    border: 10px solid black;
+}
+img{
+		width:95%;
+}
+
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:200vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .content  {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/261/837/119/game-of-thrones-series-throne-power-wallpaper-preview.jpg");
+  width:500px;
+  height:400px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Helvetica",sans-serif;
+  overflow: scroll;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}

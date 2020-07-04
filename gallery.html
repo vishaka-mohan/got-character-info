@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="gallery.css">
+	<script src = "gallery.js"></script>
+</head>
+<body>
+	
+	<div id = "image">
+		Hover to view. Click to display. 
+	</div>
+
+	<div id="photos">
+	
+	<img class = "preview" alt = "Jon Snow" src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ad51644215b57ef0cfea49acab180dbff2da45b775f7e9c63d4cd3402c3ed867-1558295933.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup()">
+	
+	<img class = "preview" alt = "Tyrion Lannister" src = "https://static.toiimg.com/photo/62981209.cms" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup1()" >
+	
+	<img class = "preview" src = "https://imgix.bustle.com/rehost/2016/9/13/7d3131f4-3503-4df1-a0ee-aee6ea0ef18e.jpg?w=970&h=546&fit=crop&crop=faces&auto=format%2Ccompress&cs=srgb&q=70" alt = "Khal Drogo" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup2()">
+
+
+	<img class = "preview" src = "https://vignette.wikia.nocookie.net/gameofthrones/images/3/34/Eddard_Stark.jpg/revision/latest/top-crop/width/360/height/360?cb=20190701140812" alt = "Eddard Stark" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup3()">
+
+
+	<img class = "preview" src = "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d1/Ser_Barristan_challenging_the_court..jpg/revision/latest?cb=20140325104449" alt = "Ser Barristan Selmy" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup4()">
+
+	<img class = "preview" src = "https://www.indiewire.com/wp-content/uploads/2019/05/1-Helen-Sloan-HBO.jpg" alt = "Danaerys Targaryen" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup5()">
+
+
+
+	<img class = "preview" src = "https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg/220px-Cersei_Lannister_in_Black_Dress_in_Season_5.jpg" alt = "Cersei Lannister" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup6()">
+
+
+	<img class = "preview" src = "https://www.ablogofthrones.com/wp-content/uploads/2016/04/Jaime-Lannister-FEAT-e1459819525131.jpg" alt = "Jaime Lannister" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup7()">
+
+	<img class = "preview" src = "https://i.pinimg.com/originals/ae/f5/82/aef58220b776cc1b2cb041397fb8b82c.jpg" alt = "Arya Stark" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup8()">
+
+	<img class = "preview" src = "https://i.pinimg.com/originals/1b/ac/b0/1bacb0c2f0fee0185a955fbf851bce20.jpg" alt = "Robb Stark" onmouseover = "upDate(this)" onmouseout = "unDo()" onclick="togglePopup9()">
+
+	</div>
+
+
+
+	<div class="popup" id="popup-1">
+	  <div class="overlay"></div>
+	  <div class="content">
+	    <div class="close-btn" onclick="togglePopup()">&times;</div>
+	    <h1>Jon Snow(Aegon Targaryen)</h1>
+	    <p style="font-family: cursive; font-size: 110%">"They Were Born On The Wrong Side Of The Wall - Doesn't Make Them Monsters."</p>
+
+	    <p>House: Targaryen + Stark </p>
+	    <p>Title: Lord Commander of the Night's Watch</p>
+	    <p>Date of Birth: 281AC</p>
+	    <p>Status: Alive</p>
+	    <p>Parents: Lyanna Stark, Rhaegar Targaryen</p>
+	    <p>Siblings: Rhaenys Targaryen, Aegon Targaryen(parental half-siblings) <br/>Robb Stark, Sansa Stark, Arya Stark, Bran Stark, Rickon Stark(maternal cousin)</p>
+	    <p>Religion: Old Gods of the Forest</p>
+	    <p>Culture: Northmen</p>
+	    <p>Portrayed by: Kit Harington</p>
+	    
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-2">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup1()">&times;</div>
+	    <h1>Tyrion Lannister</h1>
+	    <p style="font-family: cursive;">"Never forget what you are, the rest of the world will not. Wear it like armor and it can never be used to hurt you."</p>
+	    <p>House: Lannister</p>
+	    <p>Title: Lord of Casterly Rock, former Acting Hand of the King</p>
+	    <p>Date of Birth: 266AC</p>
+	    <p>Status: Alive</p>
+	    <p>Parents: Joanna Lannister,Tywin Lannister</p>
+	    <p>Siblings: Cersei Lannister, Jaime Lannister</p>
+	    <p>Religion: Faith of the Seven</p>
+	    <p>Culture: Andal</p>
+	    <p>Portrayed by: Peter Dinklage</p>
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-3">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup2()">&times;</div>
+	    <h1>Khal Drogo</h1>
+	    <p style="font-family: cursive;">"If this is a dream, I will kill the man who wakes me"</p>
+	    <p>House: None (Dothraki)</p>
+	    <p>Title: Khal</p>
+	    <p>Date of Birth: Unknown</p>
+	    <p>Status: Deceased</p>
+	    <p>Parents: Bharbo</p>
+	    <p>Spouse: Daenerys Targaryen</p>
+	    <p>Religion: Great Stallion</p>
+	    <p>Portrayed by: Jason Momoa</p>
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-4">
+	  <div class="overlay"></div>
+	  <div class="content">
+	    <div class="close-btn" onclick="togglePopup3()">&times;</div>
+	    <h1>Eddard Stark</h1>
+	    <p>"I Don't Fight In Tournaments Because When I Fight A Man For Real, I Don't Want Him To Know What I Can Do."</p>
+	    <p>House: Stark</p>
+
+	    <p>Title: Lord of Winterfell, Warden of the North, former Hand of the King</p>
+	    <p>Death: 298AC</p>
+	    <p>Status: deceased</p>
+	    <p>Parents: Rickard Stark</p>
+	    <p>Spouse: Catelyn Tully</p>
+	    <p>Religion: Old Gods of the forest</p>
+	    <p>Culture: Northmen</p>
+	    <p>Portrayed by: Sean Bean</p>
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-5">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup4()">&times;</div>
+	    <h1>Ser Barristan Selmy</h1>
+	    <p>"The commander of the City Watch himself confronted me, emboldened by my empty scabbard, but he had only three men with him and I still had my knife"</p>
+	    <p>House: Selmy</p>
+	    <p>Title: Ser, Lord Commander of the Night's Watch(former)</p>
+	    <p>Death: 302AC-- Meereen</p>
+	    <p>Status: deceased</p>
+	    <p>Parents: Lyonel Selmy</p>
+	    <p>Culture: Andal</p>
+	    <p>Portrayed by: Ian McElhinney</p>
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-6">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup5()">&times;</div>
+	    <h1>Danaerys Targaryen</h1>
+	    <p>"All men must die, but we are not men"</p>
+	    <p>House: Targaryen</p>
+	    <p>Title: Protector of the Seven Kingdoms, Queen of the Andals</p>
+	    <p>Date of birth: 282AC</p>
+	    <p>Status: Deceased</p>
+	    <p>Death: 305AC in King's Landing</p>
+	    <p>Parents: Aerys Targaryen II, Rhaella Targaryen</p>
+	    <p>Siblings: Viserys Targaryen, Rhaegar Targaryen</p>
+	    <p>Portrayed by: Emilia Clarke</p>
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-7">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup6()">&times;</div>
+	    <h1>Cersei Lannister</h1>
+	    <p>"When you play the Game of Thrones, you win or you die"</p>
+	    <p>House: Lannister</p>
+	    <p>Title: Queen of the Andals, Protector of the Seven Kingdoms, Lady of Casterly Rock</p>
+	    <p>Date of birth: 262BC</p>
+	    <p>Death: 305AC King's Landing</p>
+	    <p>Status: deceased</p>
+	    <p>Parents: Tywin Lannister, Joanna Lannister</p>
+	    <p>Siblings: Jaime Lannister, Tyrion Lannister</p>
+	    <p>Culture: Andals</p>
+	    <p>Portrayed by: Lena Headey</p>
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-8">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup7()">&times;</div>
+	    <h1>Jaime Lannister</h1>
+	    <p>"Tell me, if I'd stabbed the mad king in the belly instead of the back, would you admire me more?"</p>
+	    <p>House: Lannister</p>
+	    <p>Title: Kingslayer, The Man without Honor</p>
+	    <p>Status: Deceased</p>
+	    <p>Date of Birth: 262AC</p>
+	    <p>Death: 305AC King's Landing</p>
+	    <p>Culture: Andal</p>
+	    <p>Parents: Joanna Lannister, Tywin Lannister</p>
+	    <p>Siblings: Cersei Lannister, Tyrion Lannister</p>
+	    <p>Portrayed by: Nikolaj Coster-Waldau</p>
+
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-9">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup8()">&times;</div>
+	    <h1>Arya Stark</h1>
+	    <p>"Leave one wolf alive and the sheep are never safe"</p>
+	    <p>House: Stark</p>
+	    <p>Title: Princess</p>
+	    <p>Status: Alive</p>
+	    <p>Date of birth: 287AC</p>
+	    <p>Culture: Northmen</p>
+	    <p>Religion: Many faced god</p>
+	    <p>Parents: Catelyn stark, Eddard Stark</p>
+	    <p>Siblings: Sansa Stark, Robb Stark, Bran Stark, Rickon Stark, Jon Snow(half-brother, parental cousin)</p>
+	    <p>Portrayed by: Maisie Williams</p>
+
+
+	  </div>
+	</div>
+
+	<div class="popup" id="popup-10">
+	  <div class="overlay"></div>
+	  <div class="content" >
+	    <div class="close-btn" onclick="togglePopup9()">&times;</div>
+	    <h1>Robb Stark</h1>
+	    <p>"All Men should keep their word,kings most of all"</p>
+	    <p>House: Stark</p>
+	    <p>Title: King in the North, Lord of Winterfell</p>
+	    <p>Status: Deceased</p>
+	    <p>Date of birth: 281AC</p>
+	    <p>Death: 300AC at the Twins</p>
+	    <p>Culture: Northmen</p>
+	    <p>Religion: Old Gods of the Forest</p>
+	    <p>Parents: Catelyn Stark, Eddard Stark</p>
+	    <p>Siblings: Sansa Stark, Arya Stark, Bran Stark, Rickon Stark, Jon Snow(half-brother, parental cousin)</p>
+	    <p>Portrayed by: Richard Madden</p>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
